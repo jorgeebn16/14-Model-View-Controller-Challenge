@@ -42,5 +42,8 @@
     "nodemon": "^2.0.7",
     "pre-gyp-pack": "^1.0.1"
   },
-  "keywords": []
+  "keywords": [
+    "mvc",
+    "Heroku"
+  ]
 }
