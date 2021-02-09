@@ -39,6 +39,13 @@ sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'))
 });
 
+
+require('promises-debugger')({
+    dimNodeModules: true,
+    dimInternalModules: false,
+    dimNotInProjectRoot: true,
+    removeInternalModules: true
+  })
 // const session = require('express-session');
 
 

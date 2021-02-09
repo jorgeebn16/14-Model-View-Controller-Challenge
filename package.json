@@ -27,6 +27,7 @@
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.7",
+    "promises-debugger": "^1.0.3",
     "sequelize": "^6.5.0"
   }
 }
