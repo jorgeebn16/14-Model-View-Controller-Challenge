@@ -1,44 +1,32 @@
 {
-  "name": "mvc-challenge-tech-blog",
+  "name": "tech-blog",
   "version": "1.0.0",
-  "description": "CMS Tech Blog",
+  "description": "UCF Coding Boot Camp Week 14 Challenge",
   "main": "server.js",
   "scripts": {
-    "test": "jest",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "mysql": "mysql -u root -p",
-    "watch": "nodemon server.js",
-    "seed": "node seeds/index.js"
-  },
-  "engines": {
-    "node": "14.15.1"
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jorgeebn16/14-Model-View-Controller-MVC.git"
   },
-  "author": "Jorge Navarro",
-  "license": "MIT",
+  "author": "Mila Decker",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/jorgeebn16/14-Model-View-Controller-MVC/issues"
   },
   "homepage": "https://github.com/jorgeebn16/14-Model-View-Controller-MVC#readme",
   "dependencies": {
-    "app": "^0.1.0",
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.1.0",
     "dotenv": "^8.2.0",
-    "eslint": "^7.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
-    "jest": "^26.6.3",
     "mysql2": "^2.2.5",
-    "node": "^15.8.0",
-    "node-pre-gyp": "^0.17.0",
     "nodemon": "^2.0.7",
-    "npm": "^7.5.3",
-    "pre-gyp-pack": "^1.0.1",
     "sequelize": "^6.5.0"
   }
 }
