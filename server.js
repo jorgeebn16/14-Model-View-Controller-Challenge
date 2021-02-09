@@ -40,12 +40,13 @@ sequelize.sync({ force: false }).then(() => {
 });
 
 
-require('promises-debugger')({
-    dimNodeModules: true,
-    dimInternalModules: false,
-    dimNotInProjectRoot: true,
-    removeInternalModules: true
-  })
+// require('promises-debugger')({
+//     dimNodeModules: true,
+//     dimInternalModules: false,
+//     dimNotInProjectRoot: true,
+//     removeInternalModules: true
+//   })
+  
 // const session = require('express-session');
 
 
