@@ -1,0 +1,76 @@
+:root {
+  --primary: #ccdad1;
+  --secondary: #dce9d5;
+  --tertiary: #788585;
+  --light-dark: #a1a0a1;
+  --dark: #201110;
+  --border-radius: 0.3rem;
+}
+body {
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+  font-size: 24px;
+}
+main {
+  margin: 20px auto;
+  width: 94%;
+}
+.header {
+  padding: 1% 4%;
+  color: var(--primary);
+}
+p {
+    margin-bottom:0;
+}
+
+.app-title {
+  font-size: 3rem;
+  background-color: var(--primary);
+  color: var(--dark);
+  padding: 0 10px;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  box-shadow: 6px 5px var(--light-dark);
+}
+.navbar-nav > li > a:hover {
+  color: #fff;
+}
+.light-dark {
+  color: var(--light-dark);
+}
+.centered {
+    text-align: center;
+}
+h3{
+  color: var(--primary);
+}
+h4 a {
+    color: var(--light-dark);
+}
+h4 a:hover{
+    color: #fff;
+}
+.card {
+  margin: 0 0 20px 0;
+  border: 2px solid var(--dark);
+  border-radius: var(--border-radius);
+}
+.card-header p{
+    color: var(--primary);
+}
+
+.card-body {
+    background-color: var(--primary);
+}
+
+.dashboard-link {
+    color: #fff;
+}
+.dashboard-link:hover{
+    font-weight: bold;
+    text-decoration: none;
+}
