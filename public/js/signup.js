@@ -15,13 +15,15 @@ async function signupFormHandler(event) {
             headers: { 'Content-Type': 'application/json' }
         });
         if (response.ok) {
+            if(password.value.length > 8)
             console.log('success');
 
 
             document.location.replace('/dashboard');
 
         } else {
-            alert(response.statusText);
+            //alert(response.statusText);
+            alert("Password do not meet minimun requirements (8 Characters). Please try using a new Password");
         }
     }
 }
