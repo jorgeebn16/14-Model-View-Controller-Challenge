@@ -5,7 +5,7 @@ async function signupFormHandler(event) {
     const username = document.querySelector('#username-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
 
-    if (username && password.value>=8) {
+    if (username && password.length>=8) {
         const response = await fetch('/api/users', {
             method: 'POST',
             body: JSON.stringify({
@@ -20,11 +20,17 @@ async function signupFormHandler(event) {
 
             document.location.replace('/dashboard');
 
-        } else { if (password.value<8) {
-            //alert(response.statusText);
-            alert("Password do not meet minimun requirements of 8 Characters. Please try using a new Password");
+        // } else { 
+        //     //if (password.length<8) 
+        //     //alert(response.statusText);
+        //     alert("Password do not meet minimun requirements of 8 Characters. Please try using a new Password");
+        
         }
-        }
+    }
+    else { if (password.length<8) 
+        //alert(response.statusText);
+        alert("Password do not meet minimun requirements of 8 Characters. Please try using a new Password");
+    
     }
 }
 
